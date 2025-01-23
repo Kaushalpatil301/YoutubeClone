@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>YouTube.com Clone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+      <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <!-- Put position absolute inside position relative -->
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-icon-container">
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+        <div class="tooltip">YouTube Apps</div>
+      </div>
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="icons/notifications.svg">
+        <div class="notifications-count">9</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="current-user-picture" src="channel-pictures/my-channel.jpg">
+    </div>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=XCIYHCXQoxQ" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.avif">
+          </a>
+          <div class="video-time">6:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UCV9Mdim99sdyd56EqKJ52fg" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=XCIYHCXQoxQ" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Seedhe Maut - RED
+
+              </p>
+            </a>
+            <p class="video-author">
+              Seedhe Maut
+            </p>
+            <p class="video-stats">
+              1.7M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=p1QU3kLFPdg" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.avif">
+          </a>
+          <div class="video-time">29:36</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=p1QU3kLFPdg" target="_blank" class="video-title-link">
+              <p class="video-title">
+                How to put an HTML website online (on the Internet)
+              </p>
+            </a>
+            <p class="video-author">
+              SuperSimpleDev
+            </p>
+            <p class="video-stats">
+              1.9M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=WrX2QVJ2c3Q" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.avif">
+          </a>
+          <div class="video-time">16:08</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@neoexplains" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-3.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=WrX2QVJ2c3Q" class="video-title-link" target="_blank">
+              <p class="video-title">
+                How the CIA Found Osama bin Laden
+              </p>
+            </a>
+            <p class="video-author">
+              neo
+            </p>
+            <p class="video-stats">
+              12M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=VASwKZAUVSo" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
+          </a>
+          <div class="video-time">13:04</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@paul_et" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=VASwKZAUVSo" class="video-title-link" target="_blank">
+              <p class="video-title">
+                How Filmmakers Make Cameras Disappear | Mirrors in Movies
+              </p>
+            </a>
+            <p class="video-author">
+              Paul E.T.
+            </p>
+            <p class="video-stats">
+              5.6M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=zEvrNPj4UvA" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.avif">
+          </a>
+          <div class="video-time">3:57</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@RollsRoyceCars/videos" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=zEvrNPj4UvA" class="video-title-link" target="_blank">
+              <p class="video-title">
+                Rolls-Royce Craftsmanship
+              </p>
+            </a>
+            <p class="video-author">
+              Rolls-Royce Motor Cars
+            </p>
+            <p class="video-stats">
+              2.6M views &#183; 14 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=lBYC4_Lccjw" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.avif">
+          </a>
+          <div class="video-time">13:51</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@MrBeast" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=lBYC4_Lccjw" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Surviving 24 Hours On A Deserted Island
+              </p>
+            </a>
+            <p class="video-author">
+              MrBeast
+            </p>
+            <p class="video-stats">
+              202M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=M8vDwlHigJA" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-7.avif">
+          </a>
+          <div class="video-time">4:05</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/channel/UC9ChdqQRCaZmTCwSJ49tcbw" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=M8vDwlHigJA" class="video-title-link" target="_blank">
+              <p class="video-title">
+                GOAT (Full Video) Sidhu Moose Wala | Wazir Patar | Sukh Sanghera | Moosetape
+              </p>
+            </a>
+            <p class="video-author">
+              Sidhu Moose Wala
+            </p>
+            <p class="video-stats">
+              343M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=ZQOp12Yu3o0" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-8.avif">
+          </a>
+          <div class="video-time">13:31</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@ashishchanchlanivines" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=ZQOp12Yu3o0" class="video-title-link" target="_blank">
+              <p class="video-title">
+                Lockdown Ke Side Effects | Ashish Chanchlani
+              </p>
+            </a>
+            <p class="video-author">
+              ashish chanchlani vines
+            </p>
+            <p class="video-stats">
+              79M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=IXiYmdmnQqI" class="video-title-link" target="_blank">
+            <img class="thumbnail" src="thumbnails/thumbnail-9.avif">
+          </a>
+          <div class="video-time">14:10</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@NitishRajput" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-9.jpg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=IXiYmdmnQqI" class="video-title-link" target="_blank">
+              <p class="video-title">
+                Why Planes Don’t Fly Faster?
+              </p>
+            </a>
+            <p class="video-author">
+              Nitish Rajput
+            </p>
+            <p class="video-stats">
+              3.7M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=O-gM-FVQYg0" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.avif">
+          </a>
+
+          <div class="video-time">13:29</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@tanmaybhat" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=O-gM-FVQYg0" target="_blank" class="video-title-link">
+              <p class="video-title">
+                PAKISTANIS ARE SAVAGE - PART 3 ft. ‪@ZakirKhan‬
+              </p>
+            </a>
+            <p class="video-author">
+              Tanmay Bhat
+            </p>
+            <p class="video-stats">
+              11M views &#183; 3 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=3cbBmCCvvOc" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-11.avif">
+          </a>
+          <div class="video-time">9:48</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@hmlyamusic" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=3cbBmCCvvOc" target="_blank" class="video-title-link">
+              <p class="video-title">
+                Song Deconstruction Video | Badshah - Paani Paani | Jacqueline Fernandez | FL Studio20 - In Hindi
+              </p>
+            </a>
+            <p class="video-author">
+              HMLYA MUSIC
+            </p>
+            <p class="video-stats">
+              198k views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=galSCTXfk64" target="_blank" class="video-title-link">
+            <img class="thumbnail" src="thumbnails/thumbnail-12.avif">
+          </a>
+          <div class="video-time">12:08</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/@madhurvirli" target="_blank">
+              <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
+            </a>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com/watch?v=galSCTXfk64" target="_blank" class="video-title-link">
+              <p class="video-title">
+                School Andreas ft. Kendriya Vidyalaya | Stand Up Comedy by Madhur Virli
+              </p>
+            </a>
+            <p class="video-author">
+              Madhur Virli
+            </p>
+            <p class="video-stats">
+              3.7M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    </ma
